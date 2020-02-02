@@ -6,7 +6,8 @@
  */
 #include <iostream>
 #include <string>
-using namespace std ;
+
+using namespace std;
 
 /**
  * @brief A simple function to reverse a string using reverse iterator.
@@ -15,13 +16,12 @@ using namespace std ;
  * @param str Input string which is to be reversed
  * @return Output string which is reversed
  */
-string reverseString (string str )
-{
+string reverseString(string str) {
     std::string reversed_string;
-    for(auto it = str.rbegin(); it != str.rend(); it++){
+    for (auto it = str.rbegin(); it != str.rend(); it++) {
         reversed_string += *it;
     }
-    return reversed_string ;
+    return reversed_string;
 }
 
 int main() {
